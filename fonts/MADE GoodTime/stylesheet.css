@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'MADE GoodTime Grotesk';
+    src: url('MADEGoodTimeGrotesk.eot');
+    src: local('MADE GoodTime Grotesk'), local('MADEGoodTimeGrotesk'),
+        url('MADEGoodTimeGrotesk.eot?#iefix') format('embedded-opentype'),
+        url('MADEGoodTimeGrotesk.woff2') format('woff2'),
+        url('MADEGoodTimeGrotesk.woff') format('woff'),
+        url('MADEGoodTimeGrotesk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE GoodTime Script';
+    src: url('MADEGoodTimeScript.eot');
+    src: local('MADE GoodTime Script'), local('MADEGoodTimeScript'),
+        url('MADEGoodTimeScript.eot?#iefix') format('embedded-opentype'),
+        url('MADEGoodTimeScript.woff2') format('woff2'),
+        url('MADEGoodTimeScript.woff') format('woff'),
+        url('MADEGoodTimeScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
