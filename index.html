@@ -9,7 +9,13 @@
 <body>
   <div class="container">
     <div class="container-first-page">
-        <div class="left-image"><img src="flawor1.png" width="300" alt="Левая картинка"></div>
+        <div class="left-image">
+            <picture>
+                <source width="300" srcset="images/flower/webp/flawor_720.webp" media="(min-width: 1280px)" />
+                <source width="200" srcset="images/flower/webp/flawor_720.webp" media="(min-width: 426px)" />
+                <img width="100" src="images/flower/webp/flawor_720.webp" />            
+            </picture>
+        </div>
         <div class="content">
             <div class="names">
                 <h3 class="andrey">Андрей</h3>
@@ -18,10 +24,20 @@
             </div>
             <p class="invite">Приглашаем на свадьбу <br> 2 августа <br> 2024 года</p>
         </div>
-        <div class="right-image"><img src="flawor1.png" width="300" alt="Правая картинка"></div>
+        <div class="right-image">
+            <picture>
+                <source width="300" srcset="images/flower/webp/flawor_720.webp" media="(min-width: 1280px)" />
+                <source width="200" srcset="images/flower/webp/flawor_720.webp" media="(min-width: 426px)" />
+                <img width="100" src="images/flower/webp/flawor_720.webp" />            
+            </picture>
+        </div>
     </div>
   </div>
-  <div class="container-calendar">
+</body>
+</html>
+
+
+<!-- <div class="container-calendar">
     <h3 class="august">Август</h3>
     <div class="calendar">
         <div class="calendar-column">
@@ -83,26 +99,15 @@
             <p>25</p>
             <p class="calendar-number">1</p>
         </div>
-
-
-        <!-- <div class="calendar-row">
-            <div>29</div><div>30</div><div>31</div><div>1</div><div>2</div><div>3</div><div>4</div>
-        </div>
-        <div class="calendar-row">
-            <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
-        </div>
-        <div class="calendar-row">
-            <div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
-        </div>
-        <div class="calendar-row">
-            <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
-        </div>
-        <div class="calendar-row">
-            <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div><div>1</div>
-        </div> -->
     </div>
   </div>
-  <div class="split-long-flower"><img src="long.png" height="240px" alt="Левая картинка"/></div>
+  <div class="split-long-flower">
+    <picture>
+        <source width="768" srcset="images/long_flower/webp/long_1920.webp" media="(min-width: 1281px)" />
+        <source width="425" srcset="images/long_flower/webp/long_1920.webp" media="(min-width: 426px)" />
+        <img width="345" src="images/long_flower/webp/long_1920.webp" />            
+    </picture>
+  </div>
   <div class="timer-container">
         <div class="timer-name">До нашей свадьбы</div>
         <div class="timer-counter">
@@ -124,7 +129,16 @@
             </div>
         </div>
   </div>
-  <div class="split-line"><img src="line.png" width="100%" alt="Левая картинка"/></div>
+  <div class="split-line">
+    <picture>
+        <source srcset="images/line/webp/line_1440.webp" media="(min-width: 1280px)" />
+        <source srcset="images/line/webp/line_768.webp" media="(min-width: 426px)" />
+        <source srcset="images/line/webp/line_1440.webp" media="(min-width: 426px)" />
+        <source srcset="images/line/webp/line_375.webp" media="(min-width: 321px)" />
+
+        <img src="images/line/webp/line_320.webp" />            
+    </picture>
+  </div>
   <div class="wish-guest-container">
     <div class="wish-guest-name">Пожелания для гостей</div>
     <diV class="wish-guest-text">Мы очень старались сделать праздник красивым и гармоничным. Будем благодарны, если вы поддержите цветовую гамму нашей свадьбы</diV>
@@ -176,5 +190,4 @@
         <iframe src="https://yandex.ru/map-widget/v1/?ll=55.303137%2C51.768455&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDQyMDM1NDQxEnnQoNC-0YHRgdC40Y8sINCe0YDQtdC90LHRg9GA0LPRgdC60LjQuSDRgNCw0LnQvtC9LCDQv9C-0YHRkdC70L7QuiDQn9GA0LjQs9C-0YDQvtC00L3Ri9C5LCDQlNC-0YDQvtC20L3QsNGPINGD0LvQuNGG0LAsIDIwIgoNaTZdQhXlEk9C&z=16.78" width="300" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
     </div>
   </div>
-</body>
-</html>
+  <div></div> -->

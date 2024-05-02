@@ -133,7 +133,7 @@ body {
 
 .content {
     flex: 2;
-    padding: 50px;
+    /* padding: 50px; */
     text-align: center;
 }
 
@@ -295,6 +295,19 @@ body {
 
 }
 
+h1 {
+    font-size: calc(1em + 4vw);
+}
+
+.names {
+    font-size: calc(1em + 3vw);
+
+}
+
+.invite {
+    font-size: calc(1em + 1vw);
+
+}
 
 /* .program-area-img {
     position: relative;
