@@ -19,58 +19,85 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: calc(1em + 3vw);
-    text-align: center;
+    border: 1px solid black;
 }
 
-.svg-element {
-    width: 1em;
-}
-
-#logo {
-    stroke: red;
+.names-andrey {
+    stroke-width: 2;
+    stroke: #CB4C38;
     fill: none;
-    stroke-width: 0.1em;
-    
-    /* animation: fill 0.5s ease forwards 3s;
-    fill: none; */
+}
+#names-andrey path:nth-child(5) {
+    animation: letter-animation 1s linear forwards 0s;
+    /* animation-delay: 2.25s; */
+}
+#names-andrey path:nth-child(4) {
+    animation: letter-animation 1s linear forwards 0.6s;
+}
+#names-andrey path:nth-child(3) {
+    animation: letter-animation 1s linear forwards 1.2s;
+}
+#names-andrey path:nth-child(2) {
+    animation: letter-animation 1s linear forwards 1.8s;
+}
+#names-andrey path:nth-child(1) {
+    animation: letter-animation 1s linear forwards 2.4s;
 }
 
-#logo path:nth-child(1) {
-    animation: line-anim 2s linear forwards 0.9s;
+.names-and {
+    stroke-width: 2;
+    stroke: #CB4C38;
+    fill: none;
+}
+#names-and path:nth-child(1) {
+    animation: letter-animation 1s linear forwards 0.6s;
+    /* animation-delay: 2.25s; */
 }
 
-#logo path:nth-child(2) {
-    animation: line-anim 2s linear forwards 0.9s;
+.names-anna {
+    stroke-width: 2;
+    stroke: #CB4C38;
+    fill: none;
 }
-#logo path:nth-child(3) {
-    animation: line-anim 2s linear forwards 0.9s;
+#names-anna path:nth-child(4) {
+    animation: letter-animation 1s linear forwards 1s;
 }
-#logo path:nth-child(4) {
-    animation: line-anim 2s linear forwards 0.9s;
+#names-anna path:nth-child(3) {
+    animation: letter-animation 1s linear forwards 1.6s;
 }
-#logo path:nth-child(5) {
-    animation: line-anim 2s linear forwards 0.9s;
+#names-anna path:nth-child(2) {
+    animation: letter-animation 1s linear forwards 2.2s;
+}
+#names-anna path:nth-child(1) {
+    animation: letter-animation 1s linear forwards 2.6s;
 }
 
-@keyframes line-anim {
-    from {
-        stroke-dasharray: 500px;
-        stroke-dashoffset: 500;
-    }
+.invite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 1em;
+    font-size: calc(1em + 1vw);
+    font-family: 'Merriweather';
+}
+
+
+@keyframes letter-animation {
     to {
         stroke-dashoffset: 0;
     }
 }
-@keyframes fill {
+
+/* @keyframes fill {
     from {
         fill: transparent;
     }
     to {
         fill: red;
     }
-}
+} */
 
 
 @font-face {
@@ -138,6 +165,16 @@ body {
         url('fonts/VeryBerry Pro/VeryBerryPro-Regular.woff2') format('woff2'),
         url('fonts/VeryBerry Pro/VeryBerryPro-Regular.woff') format('woff'),
         url('fonts/VeryBerry Pro/VeryBerryPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Italic.eot');
+    src: local('Merriweather Light'), local('Merriweather-Italic'),
+        url('fonts/Merriweather/Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Merriweather/Merriweather-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
