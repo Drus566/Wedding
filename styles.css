@@ -1,3 +1,8 @@
+/* media query guide
+ * https: //gist.github.com/bartholomej/8415655 
+ * https: //css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -5,327 +10,68 @@ body {
     background-color: #FFFEF6;
     height: 3000px;
 }
-  
-/* .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-} */
 
-.wish-guest-color {
-    margin-top: 10px;
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-    justify-content: space-evenly;
+.first-section {
+    margin: 1em;
 }
 
-.circle-1 {
-    fill: #CAD6D2;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-.circle-2 {
-    fill: #DFAEB2;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-.circle-3 {
-    fill: #F9DDDA;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-.circle-4 {
-    fill: #D6E4E7;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-.circle-5 {
-    fill: #D7CDC1;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFEF6;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-}
-
-.container-calendar {
-    font-family: 'VeryBerryPro', sans-serif;
+.names {    
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #FFFEF6;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-}
-
-.calendar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 300px;
-    font-size: 26px;
-    font-family: 'MADE GoodTime Script';
-}
-
-.calendar-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.calendar-column {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-.calendar-column p {
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-.names {
     font-family: 'VeryBerryPro', sans-serif;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    color: #CB4C38;
-}
-.names h3 {
-    margin-block-start: 0;
-    margin-block-end: 0;    
-
-
-}
-
-.and {
-    padding-left: 10px;
-}
-.anna {
-    padding-left: 20px;
-}
-
-.august {
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: 35px;
-    color: #CB4C38;
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-.content {
-    flex: 2;
-    /* padding: 50px; */
-    text-align: center;
-}
-
-.left-image {
-    position: absolute;
-    transform: scale(-1, -1);
-    left: 10px;
-    bottom: 10px;
-}
-
-.right-image {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.invite {
-    font-family: 'MADE GoodTime Script', sans-serif;
-    color: #646464;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-}
-
-.calendar-number {
-    color: rgb(198, 198, 198);
-}
-
-.calendar-day {
-    color: rgb(130, 130, 130);
-    font-size: 23px;
-}
-
-.calendar-day-x {
-    /* background-color: #CB4C38; */
-    position: relative;
-}
-
-.calendar-day-x-image {
-    position: absolute;
-    bottom: -5px;
-    left: -5px;
-}
-
-.split-long-flower {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-}
-
-.timer-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 26px;
-    font-family: 'MADE GoodTime Script';
-}
-
-.timer-name {
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: 35px;
-    color: #CB4C38;
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-.timer-counter {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 600px;
-}
-
-.timer-counter-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.wish-guest-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 26px;
-    font-family: 'MADE GoodTime Script';
-    text-align: center;
-}
-
-.wish-guest-name {
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: 35px;
-    color: #CB4C38;
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-
-.program-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 26px;
-    font-family: 'MADE GoodTime Script';
-    text-align: center;
-}
-
-.program-name {
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: 35px;
-    color: #CB4C38;
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-.program-area {
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-}
-
-.program-area-text {
-    width: 300px;  
-    text-align: left; 
-    margin-left: 40px;
-}
-
-.program-area-text-time {
-    font-weight: bold;
-}
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.map-container-address {
-    font-family: 'VeryBerryPro', sans-serif;
-    font-size: 35px;
-    color: #CB4C38;
-    margin-block-start: 0;
-    margin-block-end: 0;    
-}
-
-.map-container-address-info {
-    font-family: 'MADE GoodTime Script', sans-serif;
-    color: #646464;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-
-}
-
-h1 {
-    font-size: calc(1em + 4vw);
-}
-
-.names {
     font-size: calc(1em + 3vw);
-
+    text-align: center;
 }
 
-.invite {
-    font-size: calc(1em + 1vw);
-
+.svg-element {
+    width: 1em;
 }
 
-/* .program-area-img {
-    position: relative;
-    overflow:hidden;
-    width:300px;
-    height:300px;
- }
- 
- .program-area-img img {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:300px;
-    height:300px;
-    object-fit:cover;
- } */
-   
+#logo {
+    stroke: red;
+    fill: none;
+    stroke-width: 0.1em;
+    
+    /* animation: fill 0.5s ease forwards 3s;
+    fill: none; */
+}
+
+#logo path:nth-child(1) {
+    animation: line-anim 2s linear forwards 0.9s;
+}
+
+#logo path:nth-child(2) {
+    animation: line-anim 2s linear forwards 0.9s;
+}
+#logo path:nth-child(3) {
+    animation: line-anim 2s linear forwards 0.9s;
+}
+#logo path:nth-child(4) {
+    animation: line-anim 2s linear forwards 0.9s;
+}
+#logo path:nth-child(5) {
+    animation: line-anim 2s linear forwards 0.9s;
+}
+
+@keyframes line-anim {
+    from {
+        stroke-dasharray: 500px;
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: red;
+    }
+}
+
 
 @font-face {
     font-family: 'Caravan';
