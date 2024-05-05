@@ -3,29 +3,63 @@
  * https: //css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
 
+html {
+    background-image: url(background/smooth-white-stucco-wall.webp);
+    background-size: contain;
+    /* background: green; */
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #FFFEF6;
+    /* font-family: Arial, sans-serif; */
     height: 3000px;
 }
 
 .first-section {
     margin: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* #first-section-left-flower {
+    position: absolute;
+    left: 0.01em;
+    bottom: 0.01em;
+    z-index: -1;
+}
+
+#first-section-right-flower {
+    position: absolute;
+    right: 0.01em;
+    top: 0.01em;
+} */
+
+/* #new {
+    stroke-width: 4;
+    stroke: #CB4C38;
+    animation: letter-animation 10s linear forwards 0s;
+} */
+
 .names {    
+    margin-bottom: calc(-3em + 1vw);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .names-andrey {
-    stroke-width: 2;
-    stroke: #CB4C38;
+    stroke-width: 0.5;
+    stroke: rgb(47, 47, 47);
     fill: none;
+}
+#names-andrey path:nth-child(6) {
+    animation: letter-animation 1s linear forwards 0s;
+    /* animation-delay: 2.25s; */
 }
 #names-andrey path:nth-child(5) {
     animation: letter-animation 1s linear forwards 0s;
@@ -43,10 +77,14 @@ body {
 #names-andrey path:nth-child(1) {
     animation: letter-animation 1s linear forwards 2.4s;
 }
+.names-andrey-div {
+    position: relative;
+    top: calc(1em + 5vw);
+}
 
 .names-and {
-    stroke-width: 2;
-    stroke: #CB4C38;
+    stroke-width: 0.4;
+    stroke: rgb(0, 0, 0);
     fill: none;
 }
 #names-and path:nth-child(1) {
@@ -55,8 +93,8 @@ body {
 }
 
 .names-anna {
-    stroke-width: 2;
-    stroke: #CB4C38;
+    stroke-width: 0.4;
+    stroke: rgb(47, 47, 47);
     fill: none;
 }
 #names-anna path:nth-child(4) {
@@ -71,33 +109,212 @@ body {
 #names-anna path:nth-child(1) {
     animation: letter-animation 1s linear forwards 2.6s;
 }
+.names-anna-div {
+    position: relative;
+    top: calc(-1 * (1em + 5vw));
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(1em + 50vw);
+}
+
+.photo img {
+    width: 100%;
+    opacity: 0;
+    height: auto;
+    animation: photo-animation 0.5s linear forwards 2s;
+}
 
 .invite {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    /* border: 1px solid black; */
+}
+
+.invite-text {
+    stroke-width: 2;
+    stroke: rgb(47, 47, 47);
+    fill: none;
+}
+
+#invite-text-path {
+    opacity: 0;
+    transform: translate(0,-1em);  
+    animation: letter-animation 1s linear forwards 2s;
+}
+
+.invite-date {
+    color: rgb(47, 47, 47);
+    /* font-weight: bold; */
+    font-size: calc(1em + 2vw);
+    font-family: 'Merriweather Italic';
+    opacity: 0;
+    transform: translate(0,-1em);  
+    animation: invite-animation 2s linear forwards 3s;  
+}
+
+.second-section {
+    margin: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
-    margin-top: 1em;
-    font-size: calc(1em + 1vw);
-    font-family: 'Merriweather';
+}
+
+.calendar-name {
+    stroke-width: 0.4;
+    stroke: rgb(0, 0, 0);
+}
+#calendar-name path:nth-child(6) {
+    animation: letter-animation 1s linear forwards 0s;
+    /* animation-delay: 2.25s; */
+}
+#calendar-name path:nth-child(5) {
+    animation: letter-animation 1s linear forwards 0s;
+    /* animation-delay: 2.25s; */
+}
+#calendar-name path:nth-child(4) {
+    animation: letter-animation 1s linear forwards 0.6s;
+}
+#calendar-name path:nth-child(3) {
+    animation: letter-animation 1s linear forwards 1.2s;
+}
+#calendar-name path:nth-child(2) {
+    animation: letter-animation 1s linear forwards 1.8s;
+}
+#calendar-name path:nth-child(1) {
+    animation: letter-animation 1s linear forwards 2.4s;
+}
+
+.container-calendar {
+    font-family: 'VeryBerryPro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFEF6;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 30vw);
+    font-family: 'Merriweather Italic';
+}
+.calendar-view {
+    width: 100%;
+    display: flex;
+    font-size: calc(0.3em + 3vw);
+}
+.calendar-column {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.calendar-column p {
+    margin-block-start: 0;
+    margin-block-end: 0;    
+}
+.calendar-day-select {
+    position: relative;
+}
+#calendar-heart-svg {
+    position: absolute;
+    left: calc(-7px - 0.1vw); 
+    right: 0;
+    top: -2.5vw;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 3em;
+    stroke-width: 2;
+    stroke: rgb(255, 64, 64);
+    z-index: 1;
+    animation: calendar-heart 1.3s 1s infinite;
+    animation-timing-function: ease-out;
+}
+#calendar-heart-svg path {
+    animation: letter-animation 1s linear forwards 3.4s;
+}
+.calendar-column p {
+    transform: translate(0,-2em);  
+    opacity: 0;
+    animation: calendar-view 2s linear forwards 1s;
+}
+.calendar-day { 
+    color:rgb(144, 144, 144); 
+}
+
+.third-section {
+    margin: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
 
 
 @keyframes letter-animation {
     to {
+        opacity: 1;
+        transform: translate(0,0);
         stroke-dashoffset: 0;
     }
 }
 
-/* @keyframes fill {
-    from {
-        fill: transparent;
-    }
+@keyframes invite-animation {
     to {
-        fill: red;
+        opacity: 1;
+        transform: translate(0,0);  
     }
-} */
+}
+
+@keyframes photo-animation {
+    to {
+        opacity: 1;
+        transform: translate(0,0);  
+    }
+}
+
+@keyframes calendar-view {
+    to {
+        opacity: 1;
+        transform: translate(0,0);  
+    }
+}
+
+@keyframes calendar-heart {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 @font-face {
@@ -170,9 +387,19 @@ body {
 }
 
 @font-face {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather Light';
+    src: url('Merriweather-Light.eot');
+    src: local('Merriweather Light'), local('Merriweather-Light'),
+        url('fonts/Merriweather/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather Italic';
     src: url('Merriweather-Italic.eot');
-    src: local('Merriweather Light'), local('Merriweather-Italic'),
+    src: local('Merriweather Italic'), local('Merriweather-Italic'),
         url('fonts/Merriweather/Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
         url('fonts/Merriweather/Merriweather-Italic.ttf') format('truetype');
     font-weight: normal;
