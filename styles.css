@@ -419,14 +419,80 @@ body {
 #program-name-path {
     stroke-width: 0.2em;
     stroke: rgb(0, 0, 0);
-    animation: letter-animation 15s linear forwards 0s;
+    animation: letter-animation 25s linear forwards 0s;
 }
 .program-area {
     display: flex;
+    width: 100%;
+    margin-top: 4vw;
 }
-.program-area-img {
-    width: 10vw;
+.program-area-img img {
+    width: 32vw;
 }
+.program-area-text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    font-family: 'Merriweather Italic';
+    margin-left: 4vw;
+}
+.program-area-text-time {
+    font-size: calc(0.5em + 4vw);
+    margin-bottom: 1vw;
+}
+.program-area-text-label {
+    font-size: calc(0.3em + 2.5vw);
+}
+#program-area-1 {
+    opacity: 0;
+    animation: program 1.5s linear forwards 1s;
+}
+#program-area-2 {
+    opacity: 0;
+    animation: program 1.5s linear forwards 2s;
+}
+#program-area-3 {
+    opacity: 0;
+    animation: program 1.5s linear forwards 3s;
+}
+
+.sixth-section {
+    margin: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.map-label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#map-name-path {
+    stroke-width: 0.1em;
+    stroke: rgb(0, 0, 0);
+    animation: letter-animation 15s linear forwards 0s;
+}
+#map-logo-path {
+    stroke-width: 1em;
+    stroke: rgb(0, 0, 0);
+    animation: letter-animation 15s linear forwards 0s;
+}
+.map-address {
+    opacity: 0;
+    margin-top: 5vw;
+    font-size: calc(0.5em + 2.5vw);
+    text-align: center;
+    font-family: 'Merriweather Italic';
+    opacity: 0;
+    animation: map-address 1.5s linear forwards 1s;
+}
+
+
 
 @keyframes letter-animation {
     to {
@@ -484,6 +550,19 @@ body {
         opacity: 1;
     }
 }
+
+@keyframes program {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes map-address {
+    to {
+        opacity: 1;
+    }
+}
+
 
 @font-face {
     font-family: 'Caravan';
