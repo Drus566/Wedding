@@ -15,8 +15,7 @@ body {
     /* font-family: Arial, sans-serif; */
     /* height: 3000px; */
 }
-
-.first-section {
+.container {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -25,6 +24,16 @@ body {
     align-items: center;
     border: 1px solid black;
 }
+
+/* .first-section {
+    margin: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+} */
 
 /* #first-section-left-flower {
     position: absolute;
@@ -160,7 +169,7 @@ body {
     animation: invite-animation 2s linear forwards 3s;  
 }
 
-.second-section {
+/* .second-section {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -168,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
+} */
 
 .calendar-name {
     stroke-width: 0.4;
@@ -262,7 +271,7 @@ body {
     color:rgb(144, 144, 144); 
 }
 
-.third-section {
+/* .third-section {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -270,7 +279,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
+} */
 
 .timer-names {
     width: 100%;
@@ -316,7 +325,7 @@ body {
     font-size: calc(1em + 3vw);
 }
 
-.fourth-section {
+/* .fourth-section {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -324,7 +333,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
+} */
 
 #wish-guest-color-1 {
     fill: #CAD6D2;
@@ -406,7 +415,7 @@ body {
     animation: color 2s linear forwards 3.2s;
 }
 
-.fifth-section {
+/* .fifth-section {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -414,7 +423,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
+} */
 
 #program-name-path {
     stroke-width: 0.2em;
@@ -457,7 +466,7 @@ body {
     animation: program 1.5s linear forwards 3s;
 }
 
-.sixth-section {
+/* .sixth-section {
     margin: 10vw;
     position: relative;
     display: flex;
@@ -465,7 +474,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
+} */
 
 .map-label {
     width: 100%;
@@ -491,7 +500,14 @@ body {
     opacity: 0;
     animation: map-address 1.5s linear forwards 1s;
 }
-
+.map-view {
+    width: 100%;
+    margin-top: 3vw;
+}
+.map-view iframe {
+    width: 100%;
+    height: 40vw;
+}
 
 
 @keyframes letter-animation {
