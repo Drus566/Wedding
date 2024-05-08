@@ -1,6 +1,3 @@
-<!-- https://css-live.ru/cssjssvg-s-podvypodvertom/ezhenedelnaya-podborka-krasivyx-effektov-na-css-svg-js-79.html
-https://codepen.io/marinamcpeak/pen/XYNdvd
-https://alexwlchan.net/2021/inner-outer-strokes-svg/ -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -433,12 +430,31 @@ https://alexwlchan.net/2021/inner-outer-strokes-svg/ -->
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        const TOKEN = "6996836950:AAGwySkrZ3HsfFzX96Z2EzEn9iplLlQxnXI";
+        const CHAT_ID = "1052893497";
+        const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let message = `<b>Ответ на приглашение</b>\n`
+            message += `<b>Отправитель: </b> ${ this.name.value }\n`
+            message += `<b>Почта: </b> ${this.email.value}\n`
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            });
+        })
+    </script>
+
     <script>
         let paths = document.querySelectorAll("path");
         for (let i = 0; i < paths.length; i++) {
             let length = paths[i].getTotalLength();
-            console.log(paths[i]);
-            console.log(length);
             paths[i].style.strokeDasharray = length;
             paths[i].style.strokeDashoffset = length;
         }
