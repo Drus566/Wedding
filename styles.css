@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 /* .first-section {
@@ -123,14 +123,12 @@ body {
     position: relative;
     top: calc(-1 * (1em + 5vw));
 }
-
 .photo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(1em + 50vw);
 }
-
 .photo img {
     width: 100%;
     opacity: 0;
@@ -146,19 +144,16 @@ body {
     text-align: center;
     /* border: 1px solid black; */
 }
-
 .invite-text {
     stroke-width: 2;
     stroke: rgb(0, 0, 0);
     fill: none;
 }
-
 #invite-text-path {
     opacity: 0;
     transform: translate(0,-1em);  
     animation: letter-animation 1s linear forwards 2s;
 }
-
 .invite-date {
     color: rgb(47, 47, 47);
     /* font-weight: bold; */
@@ -203,7 +198,6 @@ body {
 #calendar-name path:nth-child(1) {
     animation: letter-animation 1s linear forwards 2.4s;
 }
-
 .container-calendar {
     font-family: 'VeryBerryPro', sans-serif;
     display: flex;
@@ -215,7 +209,6 @@ body {
     padding-right: 20px;
     position: relative;
 }
-
 .calendar {
     display: flex;
     flex-direction: column;
@@ -377,7 +370,6 @@ body {
     text-align: center;
     font-family: 'Merriweather Italic';
     font-size: calc(0.4em + 3vw);
-    letter-spacing: 0.07em;
     opacity: 0;
     transform: translate(0, -5em);
     margin-bottom: 5vw;
@@ -509,6 +501,91 @@ body {
     height: 40vw;
 }
 
+/* .seventh-section {
+    margin: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+} */
+.question-text {
+    font-size: calc(0.5em + 4vw);
+    margin-bottom: 1vw;
+    text-align: center;
+    font-family: 'Merriweather Italic';
+}
+#tg {
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.tg-label {
+    font-size: calc(0.5em + 2vw);
+    font-family: 'Merriweather Italic';
+}
+.tg-wish {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+.tg-name {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+.tg-walk {
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+}
+.tg-button {
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(0.5em + 2vw);
+    font-family: 'Merriweather Italic';
+    margin: 1vw;
+}
+.tg-text {
+    height: 5vw;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: calc(0.5em + 1.8vw);
+    font-family: 'Merriweather Italic';
+    color: rgb(65, 65, 65);
+}
+.tg-placeholder-red::placeholder {
+    color:rgb(172, 28, 28);
+}
+#i-go {
+    width: 43%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    /* padding: 1em; */
+}
+#i-n-go {
+    width: 43%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    /* padding: 1em; */
+}
+.thank-you {
+    font-size: calc(0.5em + 4vw);
+    font-family: 'Merriweather Italic';
+}
+
+.last-text {
+    font-size: calc(0.5em + 5vw);
+    margin-bottom: 1vw;
+    text-align: center;
+    font-family: 'Merriweather Italic';
+}
+
+.hide {
+    visibility: hidden;
+}
 
 @keyframes letter-animation {
     to {

@@ -419,15 +419,26 @@
             </div> 
         </div>
         <div class="container seventh-section">
-            
+            <div class="question-text">Мы очень надеемся, что вы сможете присоединиться к нам <br><br> Пожалуйста, ответьте на приглашение, вы очень поможете нам в организации свадьбы</div>
             <form id="tg">
-                <label>Имя</label>
-                <input type="text" name="name">
-                <label>Фамилия</label>
-                <input type="text" name="email">
-                <button type="submit">Отправить</button>
+                <div class="tg-name">
+                    <label class="tg-label">Ваши имя и фамилия</label>
+                    <input class="tg-text" id="tg-text-name" placeholder="Иван Петрович" type="text" name="name">    
+                </div>
+                <div class="tg-wish">
+                    <label class="tg-label">Ваши пожелания (предпочтение по алкоголю)</label>
+                    <input class="tg-text" placeholder="Водка" type="text" name="wish">    
+                </div>
+                <div class="tg-button">
+                    <button id="i-go" type="submit">Пойду</button>
+                    <button id="i-n-go" type="submit">Не пойду</button>    
+                </div>
             </form>
-        </div>
+            <div class="thank-you">Спасибо за ответ!</div>
+        </div>  
+        <div class="container eighth-section">
+            <div class="last-text">С нетерпением ждём ВАС!!!</div>
+        </div>  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -436,18 +447,55 @@
         const TOKEN = "6996836950:AAGwySkrZ3HsfFzX96Z2EzEn9iplLlQxnXI";
         const CHAT_ID = "1052893497";
         const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+        const I_GO = "Пойдет";
+        const I_N_GO = "Не пойдет";
+        let GO = "Не выбрал";
 
         document.getElementById('tg').addEventListener('submit', function(e) {
             e.preventDefault();
-            let message = `<b>Ответ на приглашение</b>\n`
-            message += `<b>Отправитель: </b> ${ this.name.value }\n`
-            message += `<b>Почта: </b> ${this.email.value}\n`
+            let name = this.name.value;
+            let wish = this.wish.value;
+            
+            if (name.trim() === "") {
+                let text_name_component = document.getElementById('tg-text-name');
+                text_name_component.placeholder="Заполните поле";
+                text_name_component.classList.add('tg-placeholder-red');
+                this.name.value = "";
+                return;
+            }
 
+            let message = `<b>Ответ на приглашение</b>\n`
+            message += `<b>Отправитель: </b> ${ this.name.value } \n`
+            message += `<b>Пожелания: </b> ${ this.wish.value } \n`
+            message += `<b>${GO}</b>`
+
+            sendMessage(message)
+            document.querySelector(".thank-you").classList.remove('hide');
+        })
+
+        document.getElementById('tg-text-name').addEventListener('input', function(e) {
+            let text = e.target.value;
+            let length = text.length
+            if (length > 0) {
+                this.placeholder="Иван Петрович";
+                this.classList.remove('tg-placeholder-red');
+            }
+        })
+
+        function sendMessage(message) {
             axios.post(URI_API, {
                 chat_id: CHAT_ID,
                 parse_mode: 'html',
                 text: message
             });
+        }
+
+        document.getElementById('i-go').addEventListener('click', function(e) {
+            GO = I_GO;
+        })
+
+        document.getElementById('i-n-go').addEventListener('click', function(e) {
+            GO = I_N_GO;
         })
     </script>
 
