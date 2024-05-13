@@ -723,12 +723,30 @@ body {
     width: 48%;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    background-color: white;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 5px;
+}
+#i-go:hover {
+    transition: all 0.2s;
+    background-color: whitesmoke;
 }
 #i-n-go {
     width: 48%;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    background-color: white;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 5px;
 }
+#i-n-go:hover {
+    transition: all 0.2s;
+    background-color: whitesmoke;
+}
+/* #i-go:focus-visible {
+    background-color: wheat;
+} */
+
 .thank-you {
     font-size: calc(1em + 12vw);
     line-height: 0.5;
