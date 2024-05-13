@@ -45,31 +45,26 @@ body {
     stroke: rgb(0, 0, 0);
     fill: none;
 }
-#names-andrey path:nth-child(6)._active {
-    -moz-animation: letter-animation 1s linear forwards 0s;
-    -webkit-animation: letter-animation 1s linear forwards 0s;
-            animation: letter-animation 1s linear forwards 0s;
+
+#names-andrey-6._active {
+    animation: letter-animation 1s linear forwards 0s;
 }
-#names-andrey path:nth-child(5)._active {
-    -webkit-animation: letter-animation 1s linear forwards 0s;
-            animation: letter-animation 1s linear forwards 0s;
+#names-andrey-5._active {
+    animation: letter-animation 1.2s linear forwards 0.3s;
 }
-#names-andrey path:nth-child(4)._active {
-    -webkit-animation: letter-animation 1s linear forwards 0.6s;
-            animation: letter-animation 1s linear forwards 0.6s;
+#names-andrey-4._active {
+    animation: letter-animation 3s linear forwards 0.6s;
 }
-#names-andrey path:nth-child(3)._active {
-    -webkit-animation: letter-animation 1s linear forwards 1.2s;
-            animation: letter-animation 1s linear forwards 1.2s;
+#names-andrey-3._active {
+    animation: letter-animation 1.4s linear forwards 0.9s;
 }
-#names-andrey path:nth-child(2)._active {
-    -webkit-animation: letter-animation 1s linear forwards 1.8s;
-            animation: letter-animation 1s linear forwards 1.8s;
+#names-andrey-2._active {
+    animation: letter-animation 1.5s linear forwards 1.2s;
 }
-#names-andrey path:nth-child(1)._active {
-    -webkit-animation: letter-animation 1s linear forwards 2.4s;
-            animation: letter-animation 1s linear forwards 2.4s;
+#names-andrey-1._active {
+    animation: letter-animation 1.6s linear forwards 1.5s;
 }
+
 .names-andrey-div {
     position: relative;
     top: calc(1em + 5vw);
@@ -79,7 +74,7 @@ body {
     stroke: rgb(0, 0, 0);
     fill: none;
 }
-#names-and path:nth-child(1)._active {
+#names-and-1._active {
     -webkit-animation: letter-animation 1s linear forwards 0.6s;
             animation: letter-animation 1s linear forwards 0.6s;
 }
@@ -88,19 +83,19 @@ body {
     stroke: rgb(0, 0, 0);
     fill: none;
 }
-#names-anna path:nth-child(4)._active {
+#names-anna-4._active {
     -webkit-animation: letter-animation 1s linear forwards 1s;
             animation: letter-animation 1s linear forwards 1s;
 }
-#names-anna path:nth-child(3)._active {
+#names-anna-3._active {
     -webkit-animation: letter-animation 1s linear forwards 1.6s;
             animation: letter-animation 1s linear forwards 1.6s;
 }
-#names-anna path:nth-child(2)._active {
+#names-anna-2._active {
     -webkit-animation: letter-animation 1s linear forwards 2.2s;
             animation: letter-animation 1s linear forwards 2.2s;
 }
-#names-anna path:nth-child(1)._active {
+#names-anna-1._active {
     -webkit-animation: letter-animation 1s linear forwards 2.6s;
             animation: letter-animation 1s linear forwards 2.6s;
 }
@@ -181,31 +176,29 @@ body {
     stroke-width: 0.4;
     stroke: rgb(0, 0, 0);
 }
-#calendar-name path:nth-child(6)._active {
+#calendar-name-6._active {
     -webkit-animation: letter-animation 1s linear forwards 0s;
             animation: letter-animation 1s linear forwards 0s;
-    /* animation-delay: 2.25s; */
 }
-#calendar-name path:nth-child(5)._active  {
-    -webkit-animation: letter-animation 1s linear forwards 0s;
-            animation: letter-animation 1s linear forwards 0s;
-    /* animation-delay: 2.25s; */
-}
-#calendar-name path:nth-child(4)._active  {
+#calendar-name-5._active  {
     -webkit-animation: letter-animation 1s linear forwards 0.6s;
             animation: letter-animation 1s linear forwards 0.6s;
 }
-#calendar-name path:nth-child(3)._active  {
+#calendar-name-4._active  {
     -webkit-animation: letter-animation 1s linear forwards 1.2s;
             animation: letter-animation 1s linear forwards 1.2s;
 }
-#calendar-name path:nth-child(2)._active  {
+#calendar-name-3._active  {
     -webkit-animation: letter-animation 1s linear forwards 1.8s;
             animation: letter-animation 1s linear forwards 1.8s;
 }
-#calendar-name path:nth-child(1)._active  {
+#calendar-name-2._active  {
     -webkit-animation: letter-animation 1s linear forwards 2.4s;
             animation: letter-animation 1s linear forwards 2.4s;
+}
+#calendar-name-1._active  {
+    -webkit-animation: letter-animation 1s linear forwards 2.8s;
+            animation: letter-animation 1s linear forwards 2.8s;
 }
 .container-calendar {
     display: -webkit-box;
@@ -318,19 +311,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
 }
-#timer-name-1 path {
+#timer-name-1 {
     stroke-width: 0.1em;
     stroke:rgb(0, 0, 0);
 }
-#timer-name-1 path._active {
+#timer-name-1-path._active {
     -webkit-animation: letter-animation 25s linear forwards 0s;
             animation: letter-animation 25s linear forwards 0s;
 }
-#timer-name-2 path {
+#timer-name-2 {
     stroke-width: 0.1em;
     stroke: rgb(0, 0, 0);
 }
-#timer-name-2 path._active {
+#timer-name-2-path._active {
     -webkit-animation: letter-animation 25s linear forwards 1s;
             animation: letter-animation 25s linear forwards 1s;
 }
@@ -555,15 +548,15 @@ body {
     opacity: 0;
 }
 #program-area-2._active {
-    -webkit-animation: program 1.5s linear forwards 1.5s;
-            animation: program 1.5s linear forwards 1.5s;
+    -webkit-animation: program 1.5s linear forwards 1.3s;
+            animation: program 1.5s linear forwards 1.3s;
 }
 #program-area-3 {
     opacity: 0;
 }
 #program-area-3._active {
-    -webkit-animation: program 1.5s linear forwards 2s;
-            animation: program 1.5s linear forwards 2s;
+    -webkit-animation: program 1.5s linear forwards 1.6s;
+            animation: program 1.5s linear forwards 1.6s;
 }
 
 /* SIXTH SECTION */
@@ -791,22 +784,6 @@ body {
 }
  */
 
-@-moz-keyframes letter-animation {
-    100% {
-        opacity: 1;
-        -moz-transform: translate(0,0);
-                transform: translate(0,0);
-        stroke-dashoffset: 0;
-    }
-}
-@-webkit-keyframes letter-animation {
-    100% {
-        opacity: 1;
-        -webkit-transform: translate(0,0);
-                transform: translate(0,0);
-        stroke-dashoffset: 0;
-    }
-}
 @keyframes letter-animation {
     100% {
         opacity: 1;
